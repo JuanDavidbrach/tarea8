@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+
+ BusBin(int A[],int x,int i,int j){
+ }
+  
+ int main(){
+ int x,i,j,A,medio;
+ printf("ingrese un valor para x");
+ scanf("%i",&x);
+ printf("ingrese un valor para i");
+ scanf("%i",&i);
+ printf("ingrese un valor para j");
+ scanf("%i",&j);
+ printf("este es el valor de X",BusBin(A,x,i,j));
+ volver 0;
+ }
+ int BusBin(int A[30], int x,  int i, int j) {  
+
+ // i , j son los límites inferior y superior del arreglo 
+ 
+ medio = (i + j) / 2; 
+ if (A[medio] = x) 
+ retorno medio; 
+ más 
+ if ((x < A[medio]) && (i < medio)) 
+ volver BusBin(A, x, i, medio - 1); 
+ más 
+ if (medio < j) 
+ return BusBin(A, x, medio + 1, j) ;
+ más 
+ volver -1; 
+ }
